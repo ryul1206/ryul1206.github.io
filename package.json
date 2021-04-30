@@ -6,7 +6,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -15,6 +15,11 @@
   },
   "dependencies": {
     "gatsby": "^3.4.0",
+    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-sharp": "^3.4.0",
+    "gatsby-source-contentful": "^5.4.0",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-transformer-sharp": "^3.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -24,6 +29,7 @@
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
+    "env-cmd": "^10.1.0",
     "gatsby-plugin-postcss": "^4.4.0",
     "postcss": "^8.2.13",
     "prettier": "2.2.1",
