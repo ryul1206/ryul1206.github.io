@@ -1,10 +1,11 @@
 import React from "react"
+
+import Layout from "../components/layout"
 import Container from "../components/container"
-import "./index.css"
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Container>
         <h2>Hello world!</h2>
       </Container>
@@ -37,6 +38,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
