@@ -1,12 +1,15 @@
 import React from "react"
+import { Link } from "gatsby"
+
 import Layout from "../components/layout"
 
-export default () => (
-  <Layout>
-    {/* <PageTitle title="404" /> */}
-    <div className="text-center" style={{ marginTop: "10rem", marginBottom: "10rem" }}>
-      <h1>Page not Found!</h1>
-      {/* <p><Link to="/">Head home</Link></p> */}
-    </div>
-  </Layout>
-)
+const NotFound = () => {
+  return (
+    <Layout>
+      <h1>Page not found</h1>
+      <p><Link to="/">Head home</Link></p>
+    </Layout>
+  )
+}
+
+export default NotFound

@@ -2,10 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Container from "../components/container"
+import Seo from "../components/seo"
 
 export default function Home() {
   return (
     <Layout>
+      <Seo title="Home" />
       <Container>
         <h2>Hello world!</h2>
       </Container>
