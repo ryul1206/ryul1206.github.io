@@ -6,8 +6,8 @@ import Seo from "../components/seo"
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Home" />
-      <h2>Hello world!</h2>
+      <Seo title="About" />
+      <h2>About!</h2>
     </Layout>
   )
 }

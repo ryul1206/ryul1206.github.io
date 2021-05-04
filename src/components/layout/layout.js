@@ -17,6 +17,7 @@ export default function Layout({ children }) {
         }
       `}
       render={data => (
+        // <> == <React.Fragment>
         <>
           <Header />
           <div className="">
