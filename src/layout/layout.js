@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         // <> == <React.Fragment>
         <>
           <Header />
-          <div className="">
+          <div className=" tw-mt-16 tw-mb-0 tw-mx-auto tw-p-5 tw-max-w-screen-sm">
             <main>{children}</main>
           </div>
         </>

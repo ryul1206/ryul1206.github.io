@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -18,6 +18,15 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
+      resolve: `gatsby-plugin-use-dark-mode`,
+      options: {
+        classNameDark: `dark-mode`,
+        classNameLight: `light-mode`,
+        storageKey: `darkMode`,
+        minify: true,
+      },
+    },
     `gatsby-plugin-postcss`,
   ],
 }
